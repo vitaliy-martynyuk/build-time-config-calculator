@@ -41,5 +41,8 @@
     <ClInclude Include="utils\tools\is_config_valid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="utils\tools\require_supported_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
