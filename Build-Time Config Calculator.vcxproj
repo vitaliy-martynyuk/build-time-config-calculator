@@ -148,10 +148,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="utils\helpers\tests.h" />
+    <ClInclude Include="utils\tools\buffer_size.h" />
+    <ClInclude Include="utils\tools\constants.h" />
     <ClInclude Include="utils\utils.h" />
-    <ClInclude Include="utils\utils_helpers\utils_constants.h" />
-    <ClInclude Include="utils\utils_helpers\utils_tests.h" />
-    <ClInclude Include="utils\utils_tools\buffer_size.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

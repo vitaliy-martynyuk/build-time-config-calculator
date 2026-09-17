@@ -1,7 +1,7 @@
 #ifndef BUFFER_SIZE_H
 #define BUFFER_SIZE_H
 
-#include "../utils_helpers/utils_constants.h"
+#include "constants.h"
 #include <cstdint>
 
 namespace utils
