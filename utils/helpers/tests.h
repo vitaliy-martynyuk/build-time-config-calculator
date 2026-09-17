@@ -20,4 +20,9 @@ static_assert(utils::isConfigValid(constants::minBufferSize, constants::minVersi
 static_assert(utils::isConfigValid(constants::maxBufferSize, constants::maxVersion));
 static_assert(!utils::isConfigValid(constants::maxBufferSize + 1, constants::maxVersion + 1));
 
+static_assert(!utils::isConfigValid(0, 0, 0));
+static_assert(utils::isConfigValid(0, 0, constants::minVersion));
+static_assert(!utils::isConfigValid(constants::minBufferSize, 0, 0, 0));
+static_assert(utils::isConfigValid(constants::minBufferSize, 0, 0, 1));
+
 #endif

@@ -19,12 +19,6 @@ namespace utils
 		return version | clampedPatch | (clampedMinor << 8) | (clampedMajor << 16);
 	}
 
-	template <int MAJOR, int MINOR, int PATCH>
-	consteval std::uint32_t vversionChecksum()
-	{
-		return versionChecksum(MAJOR, MINOR, PATCH);
-	}
-
 	constexpr std::uint8_t getMajorVersion(std::uint32_t version)
 	{
 		constexpr std::uint32_t majorMask{ 0b0000'0000'1111'1111'0000'0000'0000'0000 };
