@@ -35,5 +35,8 @@
     <ClInclude Include="utils\tools\version_checksum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="utils\tools\internal_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

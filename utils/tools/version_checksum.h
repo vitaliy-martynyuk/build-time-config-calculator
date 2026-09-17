@@ -1,32 +1,20 @@
 #ifndef VERSION_CHECKSUM_H
 #define VERSION_CHECKSUM_H
 
+#include "internal_utils.h"
 #include <cstdint>
-#include <limits>
 
 namespace utils
 {
-	constexpr std::uint8_t clamp8BitInt(int v)
-	{
-		constexpr std::uint8_t min{ 0 };
-		constexpr std::uint8_t max{ 255 };
-
-		if (v < min)
-			return min;
-
-		if (v > max)
-			return max;
-
-		return static_cast<std::uint8_t>(v);
-	}
-
 	constexpr std::uint32_t versionChecksum(int major, int minor, int patch)
 	{
+		using namespace internal_utils;
+
 		const auto clampedMajor{ clamp8BitInt(major) };
 		const auto clampedMinor{ clamp8BitInt(minor) };
 		const auto clampedPatch{ clamp8BitInt(patch) };
 
-		std::uint32_t version{ 0b0000'0000'0000'0000'0000'0000'0000'0000 };
+		constexpr std::uint32_t version{ 0b0000'0000'0000'0000'0000'0000'0000'0000 };
 
 		return version | clampedPatch | (clampedMinor << 8) | (clampedMajor << 16);
 	}
