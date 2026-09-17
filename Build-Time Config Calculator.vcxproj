@@ -151,6 +151,7 @@
     <ClInclude Include="utils\helpers\tests.h" />
     <ClInclude Include="utils\tools\buffer_size.h" />
     <ClInclude Include="utils\tools\constants.h" />
+    <ClInclude Include="utils\tools\version_checksum.h" />
     <ClInclude Include="utils\utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
