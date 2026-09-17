@@ -15,9 +15,9 @@ static_assert(utils::getMajorVersion(0x2050D) == 2);
 static_assert(utils::getMinorVersion(0x2050D) == 5);
 static_assert(utils::getPatchVersion(0x2050D) == 13);
 
-static_assert(!utils::versionChecksum(0, 0));
-static_assert(utils::versionChecksum(constants::minBufferSize, constants::minVersion));
-static_assert(utils::versionChecksum(constants::maxBufferSize, constants::maxVersion));
-static_assert(!utils::versionChecksum(constants::maxBufferSize + 1, constants::maxVersion + 1));
+static_assert(!utils::isConfigValid(0, 0));
+static_assert(utils::isConfigValid(constants::minBufferSize, constants::minVersion));
+static_assert(utils::isConfigValid(constants::maxBufferSize, constants::maxVersion));
+static_assert(!utils::isConfigValid(constants::maxBufferSize + 1, constants::maxVersion + 1));
 
 #endif

@@ -6,7 +6,7 @@
 
 namespace utils
 {
-	constexpr bool versionChecksum(std::uint16_t bufferSize, std::uint32_t version)
+	constexpr bool isConfigValid(std::uint16_t bufferSize, std::uint32_t version)
 	{
 		using namespace constants;
 

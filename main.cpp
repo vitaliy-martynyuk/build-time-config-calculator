@@ -17,7 +17,7 @@ int main()
 	std::cout << static_cast<int>(majorVer1) << '\n';
 	std::cout << static_cast<int>(minorVer1) << '\n';
 	std::cout << static_cast<int>(patchVer1) << '\n';
-	std::cout << utils::versionChecksum(size3, ver1) << '\n';
+	std::cout << utils::isConfigValid(size3, ver1) << '\n';
 
 	return 0;
 }
