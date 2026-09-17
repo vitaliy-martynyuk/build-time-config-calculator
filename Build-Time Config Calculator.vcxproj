@@ -150,10 +150,8 @@
   <ItemGroup>
     <ClInclude Include="utils\utils.h" />
     <ClInclude Include="utils\utils_helpers\utils_constants.h" />
-    <ClInclude Include="utils\utils_helpers\utils_helpers.h" />
     <ClInclude Include="utils\utils_helpers\utils_tests.h" />
     <ClInclude Include="utils\utils_tools\buffer_size.h" />
-    <ClInclude Include="utils\utils_tools\utils_tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,15 +1,14 @@
 #ifndef BUFFER_SIZE_H
 #define BUFFER_SIZE_H
 
-#include "../utils_helpers/utils_helpers.h"
+#include "../utils_helpers/utils_constants.h"
 #include <cstdint>
 
 namespace utils
 {
 	constexpr int bufferSize(int baseUnit, int scaleFactor)
 	{
-		constexpr std::uint8_t minBufferSize{ 8 };
-		constexpr std::uint16_t maxBufferSize{ 512 };
+		using namespace utils_constants;
 
 		if (baseUnit < 0 || scaleFactor < 0)
 			return minBufferSize;
