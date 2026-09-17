@@ -5,5 +5,6 @@
 #include "tools/buffer_size.h"
 #include "tools/version_checksum.h"
 #include "tools/is_config_valid.h"
+#include "tools/require_supported_version.h"
 
 #endif

@@ -5,7 +5,6 @@
 #include "../tools/buffer_size.h"
 #include "../tools/version_checksum.h"
 #include "../tools/is_config_valid.h"
-#include "../tools/require_supported_version.h"
 
 static_assert(utils::bufferSize(64, 4) == 256);
 static_assert(utils::bufferSize(2, 1) == 8);
@@ -20,9 +19,5 @@ static_assert(!utils::isConfigValid(0, 0));
 static_assert(utils::isConfigValid(constants::minBufferSize, constants::minVersion));
 static_assert(utils::isConfigValid(constants::maxBufferSize, constants::maxVersion));
 static_assert(!utils::isConfigValid(constants::maxBufferSize + 1, constants::maxVersion + 1));
-
-static_assert(utils::requireSupportedVersion(2, 5, 13));
-static_assert(!utils::requireSupportedVersion(0, 0, 0));
-static_assert(!utils::requireSupportedVersion(256, 256, 256));
 
 #endif

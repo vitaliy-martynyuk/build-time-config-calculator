@@ -4,6 +4,7 @@
 
 int main()
 {
+	utils::requireSupportedVersion(2, 5, 13);
 	constexpr auto size1{ utils::bufferSize(64, 4) };
 	constexpr auto size2{ utils::bufferSize(2, 1) };
 	constexpr auto size3{ utils::bufferSize(500, 10) };

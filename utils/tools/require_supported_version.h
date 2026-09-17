@@ -4,23 +4,18 @@
 #include "constants.h"
 #include "version_checksum.h"
 #include <cstdint>
+#include <cassert>
 
 namespace utils
 {
-	consteval bool requireSupportedVersion(int major, int minor, int patch)
+	consteval void requireSupportedVersion(int major, int minor, int patch)
 	{
 		using namespace constants;
 
-		if (major < minMajorVersion || major > maxMajorVersion)
-			return false;
+		const bool isVersionValid{ versionChecksum(major, minor, patch)
+			>= versionChecksum(minMajorVersion, minMinorVersion, minPatchVersion) };
 
-		if (minor < minMinorVersion || minor > maxMinorVersion)
-			return false;
-
-		if (patch < minPatchVersion || patch > maxPatchVersion)
-			return false;
-
-		return true;
+		assert(isVersionValid && "min build version is 2.0.0");
 	}
 }
 
