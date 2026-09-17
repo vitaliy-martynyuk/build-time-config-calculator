@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Build-Time Config Calculator.vcxproj" />
+  <Project Path="Build-Time Config Calculator.vcxproj" Id="3bdc60b1-a9c2-457a-92e2-1b966fa4de6d" />
 </Solution>

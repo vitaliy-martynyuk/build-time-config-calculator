@@ -8,7 +8,7 @@ namespace utils
 {
 	constexpr std::uint32_t versionChecksum(int major, int minor, int patch)
 	{
-		using namespace internal_utils;
+		using namespace utils::internal;
 
 		const auto clampedMajor{ clamp8BitInt(major) };
 		const auto clampedMinor{ clamp8BitInt(minor) };

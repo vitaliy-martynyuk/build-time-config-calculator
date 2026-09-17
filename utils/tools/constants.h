@@ -3,10 +3,12 @@
 
 #include <cstdint>
 
-namespace utils_constants
+namespace constants
 {
 	constexpr std::uint8_t minBufferSize{ 8 };
 	constexpr std::uint16_t maxBufferSize{ 512 };
+	constexpr std::uint8_t minVersion{ 1 };
+	constexpr std::uint32_t maxVersion{ 0xFFFFFF };
 }
 
 #endif

@@ -152,6 +152,7 @@
     <ClInclude Include="utils\tools\buffer_size.h" />
     <ClInclude Include="utils\tools\constants.h" />
     <ClInclude Include="utils\tools\internal_utils.h" />
+    <ClInclude Include="utils\tools\is_config_valid.h" />
     <ClInclude Include="utils\tools\version_checksum.h" />
     <ClInclude Include="utils\utils.h" />
   </ItemGroup>

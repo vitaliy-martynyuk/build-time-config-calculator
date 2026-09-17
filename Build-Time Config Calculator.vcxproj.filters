@@ -38,5 +38,8 @@
     <ClInclude Include="utils\tools\internal_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="utils\tools\is_config_valid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

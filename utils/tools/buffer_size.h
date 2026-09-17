@@ -6,9 +6,9 @@
 
 namespace utils
 {
-	constexpr int bufferSize(int baseUnit, int scaleFactor)
+	constexpr std::uint16_t bufferSize(int baseUnit, int scaleFactor)
 	{
-		using namespace utils_constants;
+		using namespace constants;
 
 		if (baseUnit < 0 || scaleFactor < 0)
 			return minBufferSize;
@@ -18,12 +18,12 @@ namespace utils
 			* static_cast<std::uint64_t>(scaleFactor) };
 
 		if (rawSize < minBufferSize)
-			return static_cast<int>(minBufferSize);
+			return static_cast<std::uint16_t>(minBufferSize);
 
 		if (rawSize > maxBufferSize)
-			return static_cast<int>(maxBufferSize);
+			return static_cast<std::uint16_t>(maxBufferSize);
 
-		return static_cast<int>(rawSize);
+		return static_cast<std::uint16_t>(rawSize);
 	}
 }
 
