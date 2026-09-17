@@ -147,6 +147,16 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\helpers\tests.h" />
+    <ClInclude Include="utils\tools\buffer_size.h" />
+    <ClInclude Include="utils\tools\constants.h" />
+    <ClInclude Include="utils\tools\internal_utils.h" />
+    <ClInclude Include="utils\tools\is_config_valid.h" />
+    <ClInclude Include="utils\tools\require_supported_version.h" />
+    <ClInclude Include="utils\tools\version_checksum.h" />
+    <ClInclude Include="utils\utils.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
